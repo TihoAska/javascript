@@ -5,18 +5,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <script>
-        console.log('Hello world');
-        var nasaVarijabla;
-        var mojaVarijabla = 'hehe';
-        var nekaVarijabla;
-        var cetvrtaVarijabla = 10;
+        var randomBroj = prompt();
 
-        nasaVarijabla = prompt();
-        nekaVarijabla = prompt();
+        if(randomBroj % 3 == 0){
+            console.log('Broj je djeljiv s 3');
+        } else {
+            console.log('Broj nije djeljiv s 3');
+        }
 
-        var tvojaVarijabla;
-        console.log(nasaVarijabla, mojaVarijabla, tvojaVarijabla);
-        console.log('Zbroj: ', tvojaVarijabla = +nasaVarijabla + (+nekaVarijabla) + +(cetvrtaVarijabla));
     </script>
 </head>
 
