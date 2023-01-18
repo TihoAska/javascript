@@ -10,8 +10,8 @@ body {
 }
 
 .content {
-  height: calc(100vh - 200px);
-  width: 100vw;
+  height: 100px;
+  width: 100px;
 }
 
 .footer {

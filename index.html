@@ -4,40 +4,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
 
-    <script>
-      var prvi_broj = prompt();
-      var drugi_broj = prompt();
-
-      // function mojaFunkcija(){
-      //     console.log("Hello world");
-      // }
-      // mojaFunkcija();
-
-      function zbroji(prvi_broj, drugi_broj) {
-        return +prvi_broj + +drugi_broj;
-      }
-
-      function dijeli(prvi_broj, drugi_broj) {
-        while (drugi_broj == 0) {
-          console.log("Drugi broj ne moze biti 0");
-          drugi_broj = prompt();
-          if (drugi_broj == 0) {
-            console.log("Drugi broj ne moze biti 0");
-            drugi_broj = prompt();
-          }
-        }
-
-        return +prvi_broj / +drugi_broj;
-      }
-
-      console.log("Zbroj : ", zbroji(prvi_broj, drugi_broj));
-      console.log("Količnik: ", dijeli(prvi_broj, drugi_broj));
-    </script>
+    
   </head>
 
   <body>
-    <div class="header">lel</div>
-    <div class="footer">footer</div>
-    <div class="content">footer</div>
+
+    <div class="content">
+        <button id="firstButton">First button</button>
+    </div>
+    <div class="content">
+        <button id="secondButton">Click me first</button>
+    </div>
+    <p id="name">
+
+    </p>
+    
   </body>
+
+  <script>
+    var button = document.getElementById("firstButton");
+    var button2 = document.getElementById("secondButton");
+    var lel = document.getElementById("name");
+
+    button.addEventListener("click", funkcija);
+    button2.addEventListener("click", drugaFunkcija);
+
+
+    function funkcija(){
+        lel.innerHTML = prompt();
+    }
+
+    function drugaFunkcija(){
+        console.log("Stisni prvi button");
+    }
+</script>
 </html>
