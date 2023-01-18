@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <script>
-        var randomBroj = prompt();
+    <link rel="stylesheet" href="main.css" />
 
-        if(randomBroj % 3 == 0){
-            console.log('Broj je djeljiv s 3');
-        } else {
-            console.log('Broj nije djeljiv s 3');
+    <script>
+      var prvi_broj = prompt();
+      var drugi_broj = prompt();
+
+      // function mojaFunkcija(){
+      //     console.log("Hello world");
+      // }
+      // mojaFunkcija();
+
+      function zbroji(prvi_broj, drugi_broj) {
+        return +prvi_broj + +drugi_broj;
+      }
+
+      function dijeli(prvi_broj, drugi_broj) {
+        while (drugi_broj == 0) {
+          console.log("Drugi broj ne moze biti 0");
+          drugi_broj = prompt();
+          if (drugi_broj == 0) {
+            console.log("Drugi broj ne moze biti 0");
+            drugi_broj = prompt();
+          }
         }
 
-    </script>
-</head>
+        return +prvi_broj / +drugi_broj;
+      }
 
-<body>
+      console.log("Zbroj : ", zbroji(prvi_broj, drugi_broj));
+      console.log("Količnik: ", dijeli(prvi_broj, drugi_broj));
+    </script>
+  </head>
+
+  <body>
     <div class="header">lel</div>
     <div class="footer">footer</div>
     <div class="content">footer</div>
-</body>
-
+  </body>
 </html>
