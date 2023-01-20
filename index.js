@@ -19,39 +19,39 @@
 
 // ispisiSveDoOvogBroja(n);
 
-var osoba = { //key value parovi
-    ime: "Pero",
-    prezime: "Peric",
-    godine: 25,
+// var osoba = { //key value parovi
+//     ime: "Pero",
+//     prezime: "Peric",
+//     godine: 25,
     
-};  //skup razlicitih tipova
+// };  //skup razlicitih tipova
 
-var osoba2 = { //key value parovi
-    ime: "Ivo",
-    prezime: "Ivic",
-    godine: 50,
-}; 
+// var osoba2 = { //key value parovi
+//     ime: "Ivo",
+//     prezime: "Ivic",
+//     godine: 50,
+// }; 
 
-var zivotinja = { //key value parovi
-    vrsta: "Pas",
-    ime: "Albert",
-    godine: 8,
-    ispisiPodatke : function(){
-        console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
-    }
-}; 
+// var zivotinja = { //key value parovi
+//     vrsta: "Pas",
+//     ime: "Albert",
+//     godine: 8,
+//     ispisiPodatke : function(){
+//         console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
+//     }
+// }; 
 
-var zivotinja2 = { //key value parovi
-    vrsta: "Macka",
-    ime: "Mjaut",
-    godine: 8,
-}; 
+// var zivotinja2 = { //key value parovi
+//     vrsta: "Macka",
+//     ime: "Mjaut",
+//     godine: 8,
+// }; 
 
-var zivotinja3 = { //key value parovi
-    vrsta: "Papiga",
-    ime: "Pap",
-    godine: 8,
-}; 
+// var zivotinja3 = { //key value parovi
+//     vrsta: "Papiga",
+//     ime: "Pap",
+//     godine: 8,
+// }; 
 
 // console.log("Ime: " + osoba.ime);
 // console.log("Prezime: " + osoba.prezime);
@@ -63,38 +63,38 @@ var zivotinja3 = { //key value parovi
 
 // console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
 
-var zivotinje = [zivotinja, zivotinja2, zivotinja3];
+// var zivotinje = [zivotinja, zivotinja2, zivotinja3];
 
-for (var i =0; i<zivotinje.length; i++){
-    console.log("Ja sam " + zivotinje[i].vrsta + ", zovem se " + zivotinje[i].ime + " i imam " + zivotinje[i].godine + " godina");
-}
+// for (var i =0; i<zivotinje.length; i++){
+//     console.log("Ja sam " + zivotinje[i].vrsta + ", zovem se " + zivotinje[i].ime + " i imam " + zivotinje[i].godine + " godina");
+// }
 
-function ispisiIme(zivotinja){
-    console.log("Ime: " + zivotinja.ime + " godine: " + zivotinja.godine);
-}
+// function ispisiIme(zivotinja){
+//     console.log("Ime: " + zivotinja.ime + " godine: " + zivotinja.godine);
+// }
 
-ispisiIme(zivotinja);
-
-
-function ispisVremena(){
-    console.log(new Date().toLocaleTimeString());
-}
+// ispisiIme(zivotinja);
 
 
-//setTimeout(ispisVremena, 1000);
-var a = setInterval(ispisVremena, 2000);
-var b = setInterval(ispisVremena, 2000);
-
-setTimeout(clearInterval(a), clearInterval(b), 10000);
+// function ispisVremena(){
+//     console.log(new Date().toLocaleTimeString());
+// }
 
 
-console.log(new Date().toLocaleTimeString());
+// //setTimeout(ispisVremena, 1000);
+// var a = setInterval(ispisVremena, 2000);
+// var b = setInterval(ispisVremena, 2000);
 
-zivotinja.ispisiPodatke();
+// setTimeout(clearInterval(a), clearInterval(b), 10000);
 
-zivotinja.godine++;
-zivotinja.ime = "Pavo";
 
-zivotinja.ispisiPodatke();
+// console.log(new Date().toLocaleTimeString());
+
+// zivotinja.ispisiPodatke();
+
+// zivotinja.godine++;
+// zivotinja.ime = "Pavo";
+
+// zivotinja.ispisiPodatke();
 
 
