@@ -23,6 +23,7 @@ var osoba = { //key value parovi
     ime: "Pero",
     prezime: "Peric",
     godine: 25,
+    
 };  //skup razlicitih tipova
 
 var osoba2 = { //key value parovi
@@ -35,6 +36,9 @@ var zivotinja = { //key value parovi
     vrsta: "Pas",
     ime: "Albert",
     godine: 8,
+    ispisiPodatke : function(){
+        console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
+    }
 }; 
 
 var zivotinja2 = { //key value parovi
@@ -70,3 +74,27 @@ function ispisiIme(zivotinja){
 }
 
 ispisiIme(zivotinja);
+
+
+function ispisVremena(){
+    console.log(new Date().toLocaleTimeString());
+}
+
+
+//setTimeout(ispisVremena, 1000);
+var a = setInterval(ispisVremena, 2000);
+var b = setInterval(ispisVremena, 2000);
+
+setTimeout(clearInterval(a), clearInterval(b), 10000);
+
+
+console.log(new Date().toLocaleTimeString());
+
+zivotinja.ispisiPodatke();
+
+zivotinja.godine++;
+zivotinja.ime = "Pavo";
+
+zivotinja.ispisiPodatke();
+
+
