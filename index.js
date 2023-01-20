@@ -37,12 +37,36 @@ var zivotinja = { //key value parovi
     godine: 8,
 }; 
 
-console.log("Ime: " + osoba.ime);
-console.log("Prezime: " + osoba.prezime);
-console.log("Godine: " + osoba.godine);
+var zivotinja2 = { //key value parovi
+    vrsta: "Macka",
+    ime: "Mjaut",
+    godine: 8,
+}; 
 
-console.log("Ime: " + osoba2.ime);
-console.log("Prezime: " + osoba2.prezime);
-console.log("Godine: " + osoba2.godine);
+var zivotinja3 = { //key value parovi
+    vrsta: "Papiga",
+    ime: "Pap",
+    godine: 8,
+}; 
 
-console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
+// console.log("Ime: " + osoba.ime);
+// console.log("Prezime: " + osoba.prezime);
+// console.log("Godine: " + osoba.godine);
+
+// console.log("Ime: " + osoba2.ime);
+// console.log("Prezime: " + osoba2.prezime);
+// console.log("Godine: " + osoba2.godine);
+
+// console.log("Ja sam " + zivotinja.vrsta + ", zovem se " + zivotinja.ime + " i imam " + zivotinja.godine + " godina");
+
+var zivotinje = [zivotinja, zivotinja2, zivotinja3];
+
+for (var i =0; i<zivotinje.length; i++){
+    console.log("Ja sam " + zivotinje[i].vrsta + ", zovem se " + zivotinje[i].ime + " i imam " + zivotinje[i].godine + " godina");
+}
+
+function ispisiIme(zivotinja){
+    console.log("Ime: " + zivotinja.ime + " godine: " + zivotinja.godine);
+}
+
+ispisiIme(zivotinja);
